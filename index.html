@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #FFEDFE;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #FF7FF9;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #white;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #FFDFFD;
+  padding: 10px;
+  text-align: center;
+  color: #FFDFFD;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Yasmin's Bracelets</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScvKLxP--22RnKlUpaxvcmP4g-n0TP2uKIKQrDxTWcBXGnmcg/viewform">Beaded Bracelets</a></li>
+      
+      
+      <li><a href="https://us.shein.com/Bracelets-c-1758.html">Bracelets with charms</a></li>
+      
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Beaded Bracelets</h1>
+    <p>Custom made bracelet for you and all your loved ones! Each bracelet cost $2.00. The customized text bracelets are made with elastic string. Once the form is completed, I will contact you with the final price and with any questions I may have. You will receive your item(s) within 1-4 days.</p>
+    <p>Bead bracelets have been made and worn for thousands of years. Today they are mostly worn as fashion accessories to accent clothes.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+
